@@ -1,0 +1,8 @@
+pandas
+numpy
+torch
+transformers
+flask
+gunicorn
+datasets
+

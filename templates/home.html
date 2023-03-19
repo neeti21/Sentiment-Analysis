@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis using Fine-Tune DistilBERT</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis using Fine-Tune DistilBERT</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <label for="text">Enter Text:</label>
+            <textarea id="text" name="text" rows="10" placeholder="Enter your text here"></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Created by Neeti</p>
+        <a href="https://github.com/neeti21/Sentiment-Analysis">Link to GitHub</a>
+    </div>
+</body>
+</html>

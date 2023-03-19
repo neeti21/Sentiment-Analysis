@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Results</h1>
+        <div class="result">
+            <p>The sentiment of the text: {{ sentiment }} </p>
+           
+            <p>The probability of the sentiment: {{ probability }}</p>
+            
+            <a href="{{ url_for('home') }}" class="btn">Analyze Another Text</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Created by Neeti</p>
+        <a href="https://github.com/neeti21/Sentiment-Analysis">Link to GitHub</a>
+    </div>
+</body>
+</html>
+
